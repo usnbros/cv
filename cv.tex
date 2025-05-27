@@ -71,9 +71,14 @@ Languages& Ukrainian, Russian, \bf{English B2} \\
 \begin{longtable}{L!{\VRule}R}
 
 \noalign{\vskip 0.5cm}
-2024--now&{\bf {Drone detector}}. \\&
-Personal R\&D project focused on detecting and classifying UAVs. The project incorporates technologies such as Software-Defined Radio (SDR), Digital Signal Processing (DSP), and Deep Learning for signal classification using raw IQ data. Several challenges were addressed, including the implementation of rapid scanning across a wide range of frequencies and prototyping and evaluating different deep learning models to ensure functionality on an embedded edge device.\\&
-\texttt{C++, Python, TensorFlow, SDR/DSP} \\
+2025--now&{\bf \href{https://youtu.be/ttKOwGHBJe8}{FPV Video Interceptor}}. \\&
+Personal R\&D project focused on detecting, classifying, and intercepting analog videos from FPV drones. The project incorporates technologies such as Software-Defined Radio (SDR), Digital Signal Processing (DSP), and Deep Learning for signal acquisition and classification. It is implemented as a stationary field setup that can be carried. Key advantages compared to similar projects are the frequency range it can operate in and the quality of the intercepted video. The setup finds and intercepts videos from 1000 MHz to 6000 MHz and does not depend on any {\it standard} frequency tables (like hardware VRX). The intercepted video has exceptional quality compared to existing software solutions (like SDR\#, Spectrozir, AARONIA decoder block, etc.) that are capable of providing only grayscale video streams.\\&
+\texttt{C++, PyTorch, SDR/DSP, RaspberryPi/BladeRF} \\
+
+\noalign{\vskip 0.5cm}
+2024--now&{\bf \href{https://youtu.be/qHfUWD8zD8o}{Drone detector}}. \\&
+Personal R\&D project focused on detecting and classifying UAVs. The project incorporates technologies such as Software-Defined Radio (SDR), Digital Signal Processing (DSP), and Deep Learning for signal classification using raw IQ data. Several challenges were addressed, including the implementation of rapid scanning across a wide range of frequencies and prototyping and evaluating different deep learning models to ensure functionality on an embedded edge device. As a final solution, this is a hardware-software offline device which implements a data processing pipeline. It gets IQ data and passes it through two Deep Learning models. The first one finds signal boundaries (frequency range(s) and duration time of data packets) in the frequency domain; the second one performs classification of the IQ data found in the previous step.\\&
+\texttt{C++, Python, PyTorch, SDR/DSP, Nvidia Jetson Orin/BladeRF} \\
 
 \noalign{\vskip 0.5cm}
 2015--2023&{\bf \href{https://dboard.lu/}{DBoard}}. \\&
