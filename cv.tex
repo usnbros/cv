@@ -31,7 +31,7 @@
 % \vspace{20pt}
  
 \section*{Objective}
-As a seasoned Full Stack Developer and Technical Lead, I bring over 20 years of experience in designing and implementing robust software solutions across various industries and domains. My expertise spans frontend, backend and mobile development, architecture redesign, CI/CD implementation using cutting-edge technologies like NodeJS, TypeScript, ReactJS, Java, Docker/Kubernetes. I am passionate about leading teams to deliver high-quality products, optimizing existing systems, and driving innovation through scalable and maintainable code. Seeking to leverage my skills and experience in a challenging role that allows me to contribute to impactful projects and guide teams toward success.
+As a seasoned Full Stack Developer and Technical Lead, I bring over 20 years of experience in designing and implementing robust software solutions across various industries and domains. My expertise spans frontend, backend and mobile development, architecture redesign, CI/CD implementation using cutting-edge technologies like NodeJS, TypeScript, ReactJS, Java, Docker/Kubernetes, SDR/DSP, Deep Learning. I am passionate about leading teams to deliver high-quality products, optimizing existing systems, and driving innovation through scalable and maintainable code. Seeking to leverage my skills and experience in a challenging role that allows me to contribute to impactful projects and guide teams toward success.
  
 \section*{Professional Experience}
 \begin{tabular}{L!{\VRule}R}
@@ -67,16 +67,23 @@ Languages& Ukrainian, Russian, \bf{English B2} \\
 \bibliographystyle{plain}
 \nobibliography{publication}
  
+ 
+ \newpage
 \section*{Projects}
 \begin{longtable}{L!{\VRule}R}
 
 \noalign{\vskip 0.5cm}
-2025--now&{\bf \href{https://youtu.be/ttKOwGHBJe8}{FPV Video Interceptor}}. \\&
-Personal R\&D project focused on detecting, classifying, and intercepting analog videos from FPV drones. The project incorporates technologies such as Software-Defined Radio (SDR), Digital Signal Processing (DSP), and Deep Learning for signal acquisition and classification. It is implemented as a stationary field setup that can be carried. Key advantages compared to similar projects are the frequency range it can operate in and the quality of the intercepted video. The setup finds and intercepts videos from 1000 MHz to 6000 MHz and does not depend on any {\it standard} frequency tables (like hardware VRX). The intercepted video has exceptional quality compared to existing software solutions (like SDR\#, Spectrozir, AARONIA decoder block, etc.) that are capable of providing only grayscale video streams.\\&
-\texttt{C++, PyTorch, SDR/DSP, RaspberryPi/BladeRF} \\
+2025--now&{\bf \href{https://www.linkedin.com/posts/eugene-usenko_%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%96-%D0%BF%D1%80%D0%B8%D0%B9%D0%BC%D0%B0%D1%87%D1%96-%D0%BD%D0%B0%D0%B1%D0%B8%D1%80%D0%B0%D1%8E%D1%82%D1%8C%D1%81%D1%8F-%D1%81%D0%B8%D0%BB-%D1%82%D0%B0-%D0%B7%D0%B0%D1%80%D1%8F%D0%B4%D1%83-share-7426684697096798209-NQzQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC3YTrUBbfDVv5w90xm_FaBZtb-oL-q8PCQ}{Pager}}. (Complementary system to Sky Guard)\\&
+To provide immediate tactical awareness at the unit level, Sky Guard system includes a distributed real-time alerting subsystem. Upon detection of a confirmed threat, the system generates real-time alerts distributed to portable notification devices (pager-type receivers) carried by personnel. These alert devices provide immediate warning of FPV activity without requiring continuous monitoring of the main system interface, ensuring rapid awareness even under high operational workload or limited visibility conditions. The distributed alert architecture allows units to extend situational awareness beyond the sensor location, enabling timely reaction such as activation of electronic warfare measures, personnel warning, repositioning, or protective actions. \\&
+\texttt{C++, PyTorch, SDR/DSP, LoRa, OrangePi/BladeRF} \\
 
 \noalign{\vskip 0.5cm}
-2024--now&{\bf \href{https://youtu.be/qHfUWD8zD8o}{Drone detector}}. \\&
+2025--now&{\bf \href{https://youtu.be/ttKOwGHBJe8}{Sky Guard} (\href{https://youtu.be/ttKOwGHBJe8}{Personal} and \href{https://youtu.be/tZHhtbjuH0w}{Stationary version})}. \\&
+The FPV Early Warning \& Video Presence Detection System is a stationary electronic monitoring solution designed to provide early detection of enemy FPV video transmission channels across a wide RF spectrum. The system continuously scans the 1000–6000 MHz range, automatically detects active FPV video channels, identifies operating frequencies using deep-learning models, and verifies the actual presence of usable video streams. This enables operators to distinguish real threats from noise, weak signals, or false detections. The primary mission is early threat awareness, allowing units to activate countermeasures, alert personnel, and protect critical positions or infrastructure. \\&
+\texttt{C++, PyTorch, SDR/DSP, OrangePi/BladeRF} \\
+
+\noalign{\vskip 0.5cm}
+2024--2025&{\bf \href{https://youtu.be/qHfUWD8zD8o}{Drone detector}}. \\&
 Personal R\&D project focused on detecting and classifying UAVs. The project incorporates technologies such as Software-Defined Radio (SDR), Digital Signal Processing (DSP), and Deep Learning for signal classification using raw IQ data. Several challenges were addressed, including the implementation of rapid scanning across a wide range of frequencies and prototyping and evaluating different deep learning models to ensure functionality on an embedded edge device. As a final solution, this is a hardware-software offline device which implements a data processing pipeline. It gets IQ data and passes it through two Deep Learning models. The first one finds signal boundaries (frequency range(s) and duration time of data packets) in the frequency domain; the second one performs classification of the IQ data found in the previous step.\\&
 \texttt{C++, Python, PyTorch, SDR/DSP, Nvidia Jetson Orin/BladeRF} \\
 
